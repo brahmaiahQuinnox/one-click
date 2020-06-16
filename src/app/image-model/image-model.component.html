@@ -1,0 +1,13 @@
+<div class="modal-header">
+    
+    <button type="button" class="close" data-dismiss="modal" (click)="closeModal('dismiss')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body" style="height: 13vw;">
+    <img [src]="fromParent" alt="" />
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal('close')">Close</button>
+    <button type="button" class="btn btn-danger" (click)="deleteImage()">Delete</button>
+</div>
